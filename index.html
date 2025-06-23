@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/The Road Shooter WebGL.loader.js";
+      var loaderUrl = buildUrl + "/The-Road-Shooter-WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/The Road Shooter WebGL.data",
-        frameworkUrl: buildUrl + "/The Road Shooter WebGL.framework.js",
-        codeUrl: buildUrl + "/The Road Shooter WebGL.wasm",
+        dataUrl: buildUrl + "/The-Road-Shooter-WebGL.data",
+        frameworkUrl: buildUrl + "/The-Road-Shooter-WebGL.framework.js",
+        codeUrl: buildUrl + "/The-Road-Shooter-WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Road Shooter",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "540px";
-        canvas.style.height = "960px";
+        canvas.style.width = "960px";
+        canvas.style.height = "540px";
       }
 
       loadingBar.style.display = "block";
